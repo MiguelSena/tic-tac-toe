@@ -146,17 +146,3 @@ class AI:
                 return i[0], i[1]
 
         return possible[0][0], possible[0][1]
-
-if __name__ == '__main__':
-    board = [
-        [' ', ' ', ' '],
-        ['X', ' ', 'X'],
-        ['X', ' ', 'O']
-    ]
-
-    ai = AI('X')
-    y, x = ai.ai_play(board)
-    board[y][x] = 'X'
-
-    for i in board:
-        print(i)
